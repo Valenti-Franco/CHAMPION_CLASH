@@ -1,0 +1,151 @@
+.container{
+    width: 50%;
+    transition: background 0.8s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #222222c5;
+  
+}
+.card:hover{
+    transform: scale(1.071);
+    
+}
+.card2:hover{
+    transform: scale(1.071);
+}
+.cardContainer{
+    width: 20vw;
+}
+.card{
+    transition: transform 0.8s ease;
+   
+    display: flex;
+    /* width: 490px; */
+    padding: 4vw;
+    flex-direction: column;
+    /* background: #959595; */
+    /* border-radius: 25px; */
+    /* background: rgb(141,141,141); */
+    /* background: radial-gradient(circle, rgb(12 4 4) 62%, rgba(125,33,33,1) 100%); */
+    /* border: 1px solid #9f9f9f; */
+    background-image: url('../../assets/GOLD_FIFA_22.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    gap: 25px;
+}
+.card2{
+    transition: transform 0.8s ease;
+
+    display: flex;
+    /* width: 490px; */
+    padding: 4vw;
+    flex-direction: column;
+    /* background: #959595; */
+    /* border-radius: 25px; */
+    /* background: rgb(141,141,141); */
+    /* background: radial-gradient(circle, rgb(12 4 4) 62%, rgba(125,33,33,1) 100%); */
+    /* border: 1px solid #9f9f9f; */
+    background-image: url('../../assets/GOLD_FIFA_22.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    gap: 25px;
+}
+.container2{
+    background: #222222c5;
+    width: 50%;
+    transition: background 0.8s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+.confetti{
+    position: absolute;
+    z-index: -1;
+    transform: scale(2.4);
+}
+.red{
+    position: absolute;
+    z-index: -1;
+    transform: scale(3);
+}
+
+.Perfil{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000;
+}
+.divcontainer{
+    display: flex;
+    /* margin-top: 100px; */
+    width: 100%;
+    color: #000;
+    align-items: center;
+    gap: 10px;
+    contain: content;
+    font-size: 1vw;
+    justify-content: space-evenly;
+}
+.containerDetail{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    text-align: initial;
+    justify-content: space-evenly;
+
+}
+.Name{
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+.imgTeam{
+    width: 7vw;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/* Estilos para pantallas más grandes (PC) */
+/* Estilos para Full HD (1080p) */
+@media screen and (min-width: 1920px) {
+    /* Agrega aquí los estilos específicos para dispositivos con resolución Full HD (1080p) */
+  }
+  /* Estilos para HD (720p) */
+  @media screen and (min-width: 1280px) and (max-width: 1366px) {
+    /* Agrega aquí los estilos específicos para dispositivos con resolución HD (720p) */
+  }
+  
+  /* Estilos para Full HD (1080p) */
+  @media screen and (min-width: 1920px) {
+    /* Agrega aquí los estilos específicos para dispositivos con resolución Full HD (1080p) */
+  }
+  @media screen and (min-width: 768px) {
+    /* Deja este espacio en blanco o agrega estilos específicos para pantallas más grandes (PC) si lo deseas */
+  }
+  
+  /* Estilos para tabletas */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Deja este espacio en blanco o agrega estilos específicos para tabletas si lo deseas */
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 575px) {
+    /* Deja este espacio en blanco o agrega estilos específicos para dispositivos móviles si lo deseas */
+  }

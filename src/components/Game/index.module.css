@@ -1,0 +1,163 @@
+.container{
+    width: 25%;
+    /* height: 300px; */
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    /* margin-top: calc(50vh - 150px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    justify-content: center;
+}
+.containerPuntos{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    /* speak: digits; */
+    display: flex;
+    /* box-shadow: 1px 1px 12px 5px #c9b072; */
+    flex-direction: column;
+}
+.PaloPuntos{
+    height: 5vh;
+    width: 5vw;
+    /* border: 1px solid #fff; */
+    box-shadow: 1px 1px 12px 5px #c9b072;
+    /* border-bottom: 0; */
+    /* margin: 18px; */
+    /* background: #222; */
+    z-index: -1;
+}
+.PuntosNum{
+    width: 50%;
+    margin: auto;
+    height: 5vh;
+    line-height: 5vh;
+    border-radius: 35px;
+    background: #333333;
+    padding: 1vh;
+    border: 8px double #928360;
+    margin: 11px auto;
+}
+
+.ContainerDivPoint{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sectionPuntos{
+    border: 11px double #a99563;
+    border-radius: 35px;
+
+}
+@font-face {
+    font-family: 'scored';
+    src: url(/src/assets/scoreboard.ttf);
+}
+.PuntosNum{
+    font-family: 'scored', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.ContainerPoint{
+    position: absolute;
+    top: 0;
+    width: 22vw;
+    /* speak: digits; */
+    display: flex;
+    /* box-shadow: 1px 1px 12px 5px #c9b072; */
+    flex-direction: column;
+}
+.containerVida{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    left: 0;
+    justify-content: center;
+}
+/* .container h1{
+    width: 400px;
+} */
+.containerStop{
+    width: 100vw;
+    /* height: 300px; */
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    /* margin-top: calc(50vh - 150px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    justify-content: center;
+
+}
+
+.ContainerCañon{
+    z-index: 100;
+    position: absolute;
+    width: 475px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background: rgb(70, 69, 69);
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    
+    border:1px solid rgb(255, 255, 255);
+}
+.TitleGame{
+    padding: 0px 25px 0px 25px;
+    border: 10px double #ffffff;
+    border-bottom: 0;
+    margin: 0;
+    background: #00000021;
+    width: 10vw;
+    font-size: revert;
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/src/assets/red.png);
+    background-size: contain;
+    background-repeat: repeat;
+}
+.InfoPlayer{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    padding: 0px 25px 0px 25px;
+    border: 10px double #ffffffab;
+    /* border-top: 0; */
+    border-radius: 10px 10px 50% 50%;
+    margin: 0;
+    background: #a0ff3b4f;
+    height: 130px;
+
+
+}
+/* .info{
+    width: 100px;
+} */
+
+
+.corazon{
+    transform: unset;
+    animation: corazon 0.5s 1.5s alternate infinite;
+}
+
+
+
+@keyframes corazon{
+    30%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: translateY(-1.5%) scale(1);
+    }
+  }

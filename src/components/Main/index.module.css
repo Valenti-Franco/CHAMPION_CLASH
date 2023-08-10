@@ -1,0 +1,187 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  
+    contain: content;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: stretch;
+}
+.containerPuntos{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    padding: 0;
+  
+  }
+.ContainerLogo{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.containerStart{
+  width: 50%;
+  margin: auto;
+  background: #00000057;
+  padding: 7%;
+  text-shadow: 1px 1px 6px #70fff4;
+}
+.title{
+  text-transform: uppercase;
+}
+.textStart{
+  text-align: initial;
+  padding: 5%;
+}
+
+.textStart1{
+  text-align: initial;
+  padding: 5% 5% 0 5%;
+
+}
+.textStart2{
+  text-align: center;
+  padding: 5% 5% 0 5%;
+
+}
+.btnStart{
+  padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid;
+    background: #53cec68a;
+    text-shadow: 1px 1px 10px #ffffff8f;
+    width: 180px;
+    cursor: pointer;
+
+}
+
+  .Pelota{
+    position: absolute;
+    /* display: flex; */
+    width: 75vw;
+    height: 75vh;
+    /* bottom: 0; */
+    top: -25%;
+    left: -25%;
+    /* transform: scale(1.5); */
+    z-index: -1;
+  }
+.Arbitro{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    /* height: 800px; */
+    height: 300px;
+   
+    bottom: 0;
+    
+}
+  .Jugador{
+    position: absolute;
+    display: flex;
+    /* max-width: 25vw; */
+    /* min-width: 22vw; */
+    /* height: 800px; */
+    width: 24vw;
+    /* height: 300px; */
+    height: 25vh;
+    right: 0;
+    bottom: 0;
+ 
+  }
+
+  #Pelota{
+    transform: unset;
+    animation: movePelota 0.5s 1.5s alternate infinite;
+  }
+  #PieJuego{
+    transform: unset;
+    animation: movePie 0.5s 1.5s alternate infinite;
+  }
+  #Brazo{
+    transform: unset;
+    animation: movePie 0.5s 1.5s alternate infinite;
+  }
+  #Cabeza{
+    transform: unset;
+    animation: moveCabeza 0.5s 1.5s alternate infinite;
+  }
+  #botin{
+    transform: unset;
+    animation: moveBotin 0.5s 1.5s alternate infinite;
+  }
+ 
+  @keyframes moveCabeza{
+    100%{
+        transform: translateY(-0.5%);
+    }
+  }
+
+ 
+
+  @keyframes movePie{
+    100%{
+        transform: translateY(-1.5%);
+    }
+  }
+    @keyframes moveBotin{
+        100%{
+            transform: rotateZ(0.3deg) rotateX(10deg) rotateY(5deg);
+        }
+
+}
+  @keyframes movePelota{
+    100%{
+        transform: translateY(-36%);
+    }
+  }
+
+
+
+/* Estilos para pantallas más grandes (PC) */
+/* Estilos para Full HD (1080p) */
+@media screen and (min-width: 1920px) {
+  /* Agrega aquí los estilos específicos para dispositivos con resolución Full HD (1080p) */
+}
+/* Estilos para HD (720p) */
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  /* Agrega aquí los estilos específicos para dispositivos con resolución HD (720p) */
+}
+
+/* Estilos para Full HD (1080p) */
+@media screen and (min-width: 1920px) {
+  /* Agrega aquí los estilos específicos para dispositivos con resolución Full HD (1080p) */
+}
+@media screen and (min-width: 768px) {
+  /* Deja este espacio en blanco o agrega estilos específicos para pantallas más grandes (PC) si lo deseas */
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* Deja este espacio en blanco o agrega estilos específicos para tabletas si lo deseas */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 575px) {
+  /* Deja este espacio en blanco o agrega estilos específicos para dispositivos móviles si lo deseas */
+}

@@ -1,0 +1,39 @@
+
+
+  .Pelota{
+    position: absolute;
+    /* display: flex; */
+    /* width: 75vw; */
+    /* height: 75vh; */
+    /* bottom: 0; */
+    top: calc(50vh - 250px);
+    /* left: -25%; */
+    transform: scale(1.5);
+    z-index: -10;
+    border-radius: 50%;
+    /* contain: content; */
+    background-color: #00000000;
+  }
+
+ 
+  @keyframes moveCabeza{
+    100%{
+        transform: translateY(-0.5%);
+    }
+  }
+  @keyframes movePie{
+    100%{
+        transform: translateY(-1.5%);
+    }
+  }
+    @keyframes moveBotin{
+        100%{
+            transform: rotateZ(0.3deg) rotateX(10deg) rotateY(5deg);
+        }
+
+}
+  @keyframes movePelota{
+    100%{
+        transform: translateY(-36%);
+    }
+  }
