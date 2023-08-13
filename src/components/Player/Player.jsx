@@ -23,10 +23,12 @@ const Player = ({ currentPlayer, setCurrentPlayers, index, updateCurrentPlayers,
 // console.log(currentPlayer.player.name)
   return (
     <motion.div
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 1, x: '100%', duration: 500 }}
-      transition={{ type: 'spring', stiffness: 500, damping: 100 }}
+      // transition={{ type: 'spring', stiffness: 500, damping: 100 }}
       
       className={index === 0 ? style.container : style.container2}
     >

@@ -12,9 +12,10 @@ main{
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    contain: content;
 }
 .containerPuntos{
     position: absolute;
@@ -92,6 +93,7 @@ body{
     width: 500px;
     /* height: 800px; */
     height: 300px;
+    z-index: 100;
    
     bottom: 0;
     
@@ -108,6 +110,13 @@ body{
     right: 0;
     bottom: 0;
  
+  }
+  .containerPlayers{
+    display: flex;
+    justify-content: space-evenly;
+    background: #242424bd;
+    /* filter: blur(0px); */
+    width: 100%;
   }
 
   #Pelota{
@@ -164,7 +173,40 @@ body{
   /* Agrega aquí los estilos específicos para dispositivos con resolución Full HD (1080p) */
 }
 /* Estilos para HD (720p) */
-@media screen and (min-width: 1280px) and (max-width: 1366px) {
+@media screen and (max-width: 1280px)  {
+  .Arbitro{
+    position: absolute;
+    display: flex;
+    width: 20vw;
+    /* height: 800px; */
+    height: 17vh;
+    z-index: 100;
+   right: 30px;
+    bottom: 30%;
+    
+}
+ 
+  .containerStart{
+    width: auto;
+    margin: auto;
+    overflow-x: clip;
+    overflow-y: auto;
+    background: #00000057;
+    padding: 7%;
+    text-shadow: 1px 1px 6px #70fff4;
+  }
+  .containerPlayers {
+    display: flex;
+    justify-content: space-between;
+    background: #242424bd;
+    /* filter: blur(0px); */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
   /* Agrega aquí los estilos específicos para dispositivos con resolución HD (720p) */
 }
 
