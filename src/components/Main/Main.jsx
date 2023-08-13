@@ -21,38 +21,7 @@ import {Sound} from '../Sound/Sound';
 import Header from '../Header/Header';
 const Main = () => {
 
-    // useEffect(() => {
-    //     fetch("https://v3.football.api-sports.io/players/topscorers?season=2022&league=135", {
-    //         "method": "GET",
-    //         "headers": {
-    //             "x-rapidapi-host": "v3.football.api-sports.io",
-    //             "x-rapidapi-key": "e4e68634fe7c14eb878dea59e2658255"
-    //         }
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         if (data && data.response && data.response.length > 0) {
-    //             const playerDataArray = data.response.map(playerData => {
-    //                 const { player } = playerData;
-    //                 const { duels, passes, goals, team, league, dribbles } = playerData.statistics[0];
-    //                 return {
-    //                     player,
-    //                     duels,
-    //                     passes,
-    //                     goals,
-    //                         dribbles,
-    //                     team,
-    //                     league
-    //                 };
-    //             });
     
-    //             console.log(playerDataArray);
-    //         }
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //     });
-    // }, []);
 
    let PlayersJson = [
     
